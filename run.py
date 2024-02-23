@@ -80,6 +80,12 @@ def index():
                 print('no match')
                 save()
                 continue
+
+            '''
+            We now know we have a match, so we do something
+
+            in our case, we care about the value of the transaction, in your case, it might be something else, like tagging the transaction
+            '''
             value = float(value.iloc[0]['value'])
                 
             # find and element where either to, or from is a key in the contracts dict
